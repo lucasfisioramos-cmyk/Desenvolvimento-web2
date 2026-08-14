@@ -1,1 +1,39 @@
+Exercício 04 - Sistema de Reservas de Hotel com Tarifas Dinâmicas
+Contexto
+Uma rede hoteleira quer controlar reservas usando tarifação dinâmica por tipo de quarto e temporada.
+Desafio
+Crie um sistema em JavaScript para gerenciar reservas e gerar estatísticas de ocupação e faturamento.
+Configuração inicial
+•	Solicitar o valor base da diária padrão.
+•	Solicitar valor do café da manhã por hóspede/dia.
+Cadastro de reservas
+Em loop, até o usuário escolher sair:
+•	Código da reserva (único, validado).
+•	Tipo de quarto (S–Standard, L–Luxo, P–Premium).
+•	Temporada (B–Baixa, A–Alta, F–Feriado).
+•	Quantidade de diárias.
+•	Número de hóspedes.
+•	Café da manhã incluso (S/N).
+Regras de preços
+•	Multiplicador por tipo de quarto:
+o	Standard: 100% da base.
+o	Luxo: 150% da base.
+o	Premium: 200% da base.
+•	Ajuste por temporada:
+o	Baixa: sem acréscimo.
+o	Alta: +25% sobre a diária ajustada.
+o	Feriado: +40% sobre a diária ajustada.
+•	Café da manhã:
+cafe_total = valorCafe * hospedes * diarias.
+•	Valor total da reserva:
+valor_total = (valor_diaria_final * diarias) + cafe_total.
+Relatório final
+•	Total de reservas cadastradas.
+•	Valor médio por reserva.
+•	Valor total por tipo de quarto (S, L, P).
+•	Valor total por temporada (B, A, F).
+•	Reserva mais cara (código, tipo, temporada, hóspedes, valor).
+•	Reserva mais barata (código, tipo, temporada, hóspedes, valor).
+•	Quantidade de reservas com café incluso e sem café.
+•	Ocupação total (soma de diárias × hóspedes) e valor médio por hóspede.
 
