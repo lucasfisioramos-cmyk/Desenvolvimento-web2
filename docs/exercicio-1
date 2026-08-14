@@ -1,0 +1,27 @@
+# Exercício 1 – Frete com múltiplos pedidos e relatório final
+
+Uma empresa metalmecânica precisa automatizar ainda mais o cálculo do frete para melhorar sua logística. 
+Amplie o exercício original criando uma aplicação robusta em JavaScript com as seguintes características adicionais:
+
+## Requisitos adicionais:
+
+- Permitir ao usuário inserir quantos pedidos desejar, usando um loop controlado por um menu.
+- Para cada pedido, o usuário deve inserir:
+
+1. Código do pedido (**único, validado pelo sistema**)
+2. Região (**validar com switch-case e loop while para garantir entradas válidas**):
+- Região 1 (Sudeste): R$ 1,20 por peça
+- Região 2 (Sul): R$ 1,30 por peça
+- Região 3 (Centro-Oeste): R$ 1,50 por peça
+3. Distância em km.
+4. Quantidade de peças.
+5. Se deseja ou não rastreamento (R$ 200 fixos).
+Aplicar desconto de 12% nas peças excedentes acima de 1.000 unidades.
+Valor fixo por quilômetro: considere que cada quilômetro custa o equivalente a 1 litro de combustível. O preço do litro de combustível deverá ser solicitado ao usuário no início da aplicação.
+Ao final, o sistema deve gerar um relatório contendo:
+
+1. O número total de pedidos realizados.
+2. Valor médio pago por pedido.
+3. Valor total acumulado em cada região.
+4. Código e valor total pago pelo pedido mais caro.
+5. Código e valor total pago pelo pedido mais barato.
