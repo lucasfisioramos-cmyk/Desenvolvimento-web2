@@ -1,32 +1,34 @@
-Exercício 6 - Sistema de Vendas com Comissões, Metas e Performance
-Contexto
+# Exercício 6
+
+## Sistema de Vendas com Comissões, Metas e Performance
 Uma rede de lojas quer controlar as vendas dos seus vendedores, com comissões e análise de metas.
-Desafio
 Crie um sistema em JavaScript para registrar vendas, calcular comissões e gerar um relatório de performance por vendedor e região.
-Configuração inicial
-•	Solicitar meta mensal de vendas por vendedor (R$).
-•	Solicitar percentual base de comissão (ex.: 5%).
-Cadastro de vendas
+
+## Configuração inicial
+- Solicitar meta mensal de vendas por vendedor (R$).
+- Solicitar percentual base de comissão (ex.: 5%).
+
+## Cadastro de vendas
 Em loop, até o usuário decidir sair:
-•	Código da venda (único).
-•	Código do vendedor.
-•	Região da loja (1–Norte, 2–Nordeste, 3–Sudeste, 4–Sul).
-•	Valor da venda.
-•	Tipo de cliente (PF–Pessoa Física, PJ–Pessoa Jurídica).
-Regras de comissão
-•	Comissão base: valor_venda * percentual_base.
-•	Bônus por tipo de cliente:
-o	PF: +2% do valor da venda.
-o	PJ: +3% do valor da venda.
-•	Bônus por região:
-o	Norte/Nordeste: +1%.
-o	Sudeste: 0%.
-o	Sul: +0,5%.
-•	Comissão total da venda = base + bônus tipo de cliente + bônus região.
-•	Acumular por vendedor:
-o	Valor total vendido.
-o	Comissão total acumulada.
-Relatório final
+- Código da venda (único).
+- Código do vendedor.
+- Região da loja (1–Norte, 2–Nordeste, 3–Sudeste, 4–Sul).
+- Valor da venda.
+- Tipo de cliente (PF–Pessoa Física, PJ–Pessoa Jurídica).
+## Regras de comissão
+- Comissão base: valor_venda * percentual_base.
+- Bônus por tipo de cliente:
+    - PF: +2% do valor da venda.
+    - PJ: +3% do valor da venda.
+- Bônus por região:
+    - Norte/Nordeste: +1%.
+    - Sudeste: 0%.
+    - Sul: +0,5%.
+- Comissão total da venda = base + bônus tipo de cliente + bônus região.
+- Acumular por vendedor:
+    - Valor total vendido.
+    - Comissão total acumulada.
+## Relatório final
 •	Total de vendas registradas.
 •	Valor total vendido por região.
 •	Valor total vendido por tipo de cliente (PF, PJ).

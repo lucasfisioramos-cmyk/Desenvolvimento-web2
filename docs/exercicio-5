@@ -1,11 +1,14 @@
-Exercício 5 - Sistema de Treinos Esportivos com Carga e Risco de Lesão
-Contexto
+# Exercício 5
+
+## Sistema de Treinos Esportivos com Carga e Risco de Lesão
+
 Um clube de futebol quer controlar os treinos dos atletas e monitorar risco de sobrecarga.
-Desafio
 Crie um sistema em JavaScript para gerenciar treinos semanais de vários jogadores e identificar risco de lesão.
-Configuração inicial
+
+## Configuração inicial
 •	Solicitar carga máxima semanal recomendada (em pontos).
-Cadastro de treinos
+
+### Cadastro de treinos
 Em loop, até o usuário decidir parar:
 •	Código do treino (único).
 •	Nome do jogador.
@@ -13,25 +16,27 @@ Em loop, até o usuário decidir parar:
 •	Tipo de treino (F–Físico, T–Técnico, E–Estratégico).
 •	Duração em minutos.
 •	Intensidade de 1 a 10 (validar com while).
-Cálculo da carga
+
+### Cálculo da carga
 •	Multiplicador por tipo:
-o	Físico: 1.5
-o	Técnico: 1.2
-o	Estratégico: 1.0
+    o	Físico: 1.5
+    o	Técnico: 1.2
+    o	Estratégico: 1.0
 •	Fórmula:
 carga = (duracao_min / 10) * intensidade * multiplicador.
 •	Acumular carga por jogador.
 •	Se carga semanal de um jogador > carga máxima recomendada → marcar risco de lesão.
-Relatório final
+
+## Relatório final
 •	Total de treinos cadastrados.
 •	Lista de jogadores com:
-o	Carga semanal total.
-o	Quantidade de treinos.
+    o	Carga semanal total.
+    o	Quantidade de treinos.
 •	Jogador com maior carga semanal (nome, posição, nº de treinos).
 •	Jogador com menor carga semanal.
 •	Quantidade de jogadores com risco de lesão.
 •	Carga média por tipo de treino (F, T, E).
 •	Para cada posição:
-o	Total de treinos.
-o	Carga média.
+    o	Total de treinos.
+    o	Carga média.
 

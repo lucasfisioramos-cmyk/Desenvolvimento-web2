@@ -1,29 +1,33 @@
-Exercício 3 - Sistema de Controle de Produção com Estoque e Relatórios
-Contexto
+# Exercício 3
+
+## Sistema de Controle de Produção com Estoque e Relatórios
+
 Uma indústria de peças automotivas quer controlar melhor sua produção e estoque diário.
-Desafio
-Crie um sistema em JavaScript para gerenciar múltiplas ordens de produção e gerar relatórios consolidados.
-Requisitos do sistema
+Desafio. Crie um sistema em JavaScript para gerenciar múltiplas ordens de produção e gerar relatórios consolidados.
+
+## Requisitos do sistema
 •	Permitir cadastrar ordens de produção em loop até o usuário decidir parar (menu).
 •	Para cada ordem, solicitar:
-o	Código da ordem (único, validado).
-o	Código do produto.
-o	Tipo de produto (1–Padrão, 2–Premium, 3–Sob encomenda), validado com switch + while.
-o	Quantidade produzida.
-o	Custo unitário de produção.
-o	Estoque inicial do produto.
-Regras de negócio
+    o	Código da ordem (único, validado).
+    o	Código do produto.
+    o	Tipo de produto (1–Padrão, 2–Premium, 3–Sob encomenda), validado com switch + while.
+    o	Quantidade produzida.
+    o	Custo unitário de produção.
+    o	Estoque inicial do produto.
+
+## Regras de negócio
 •	Atualizar estoque final: estoque_final = estoque_inicial + quantidade_produzida.
 •	Ajuste de custo unitário:
-o	Padrão: custo base.
-o	Premium: +10% sobre custo base.
-o	Sob encomenda: +20% sobre custo base.
+    o	Padrão: custo base.
+    o	Premium: +10% sobre custo base.
+    o	Sob encomenda: +20% sobre custo base.
 •	Alertas de estoque:
-o	Estoque > 5000 → alerta de estoque alto.
-o	Estoque < 500 → alerta de estoque crítico.
+    o	Estoque > 5000 → alerta de estoque alto.
+    o	Estoque < 500 → alerta de estoque crítico.
 •	Calcular custo total da ordem:
 custo_total = quantidade_produzida * custo_unitario_ajustado.
-Relatório final
+
+## Relatório final
 •	Total de ordens registradas.
 •	Estoque total final por tipo de produto.
 •	Média de custo total por ordem.
@@ -31,6 +35,5 @@ Relatório final
 •	Ordem com menor custo total (código e valor).
 •	Quantidade de ordens com alerta de estoque alto e crítico.
 •	Para cada produto (por código):
-o	Estoque final consolidado.
-o	Valor total investido.
-
+    o	Estoque final consolidado.
+    o	Valor total investido.
