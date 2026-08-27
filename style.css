@@ -16,7 +16,7 @@ h1 {
 }
 .btn {
     border-radius: 20px;
-}
+    
 .card:hover {
   transform: scale(1.05);
 }
